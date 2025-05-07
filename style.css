@@ -1,0 +1,408 @@
+body {
+
+    margin: 0;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden; 
+    overflow-y: auto;
+    background-color: #ffffff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 80px;
+    background-size: cover;
+    color: #2b2b2b;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    font-weight: bold;
+}
+
+
+.cal-sans-regular {
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    z-index: 1000;
+}
+
+
+.logo img {
+    height: 60px;
+    margin: right 30px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    position: absolute;
+    right: 15%;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: rgb(255, 255, 255)
+        /* Cor amarelo dourado ao passar o mouse */
+}
+
+.video-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 10px black;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    margin-left: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    margin: auto;
+    padding: 0;
+}
+
+.navbar-logo {
+    width: 60px;
+    /* Ajuste o tamanho conforme necessário */
+}
+
+.navbar-title {
+    margin: 0;
+    font-size: 1.5em;
+    color: white;
+    margin-right: auto;
+    margin-left: 10px;
+    /* Ajuste conforme necessário */
+}
+
+
+.navbar-title {
+    font-size: 1.2em;
+    /* Chamativo, mas sem exagero */
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px black;
+    margin-left: 380px;
+}
+
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    /* Ajusta a posição do risco */
+    width: 100%;
+    height: 2px;
+    /* Espessura do risco */
+    background: white;
+    transform: scaleX(0);
+    /* Inicialmente invisível */
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+    /* Aparece o risco ao passar o mouse */
+}
+
+
+
+.modelos {
+    text-align: center;
+    padding: 50px 20px;
+    background: black;
+}
+
+.modelos-title {
+    font-size: 2.3em;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+
+
+.sobre-titulo {
+    font-size: 3rem;
+    color: var(--claro);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre-caixa {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.caixa-textos-projetos {
+    padding: 1.5rem;
+
+}
+
+.sobre-paragrafo {
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+
+.projetos {
+    padding: 6rem 2rem;
+}
+
+.projetos-caixa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projetos-card {
+    background-color: #f4f4f4;
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--vidro);
+    overflow: hidden;
+}
+
+.projetos-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.projetos-card:hover {
+    box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px) scale(1.03);
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+
+
+.projetos-imagem {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.paragrafo-projetos {
+    line-height: 1.26rem;
+}
+
+.info-projetos {
+    margin-bottom: 5px;
+    
+}
+
+
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-image: url('./imag/capa-lambr.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Texto sobre a imagem */
+.sobre-texto {
+    position: absolute;
+    color: white;
+    text-align: left; /* Alinhado ao lado */
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente para dar destaque */
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* Título */
+.sobre-texto h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Parágrafo */
+.sobre-texto p {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-texto {
+        position: static;
+        margin-top: 20px;
+        max-width: 90%;
+    }
+}
+
+
+
+
+.login-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Imagem de fundo */
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Formulário transparente */
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.1); 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(20px); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.login-form input {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.login-form input::placeholder {
+    color: white;
+}
+
+/* Botão de login */
+.login-form button {
+    width: 50%;
+    padding: 10px;
+    background: gold;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-form button:hover {
+    background: rgb(140, 247, 0);
+}
+
+.login-form h2{
+    color: #f4f4f4;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
